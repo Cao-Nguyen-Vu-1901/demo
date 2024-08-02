@@ -1,0 +1,497 @@
+INSERT INTO nongsan.category (id, code, name) VALUES 
+    ('CAT001', 'C001', 'Category 1'),
+    ('CAT002', 'C002', 'Category 2'),
+    ('CAT003', 'C003', 'Category 3'),
+    ('CAT004', 'C004', 'Category 4'),
+    ('CAT005', 'C005', 'Category 5'),
+    ('CAT006', 'C006', 'Category 6'),
+    ('CAT007', 'C007', 'Category 7'),
+    ('CAT008', 'C008', 'Category 8'),
+    ('CAT009', 'C009', 'Category 9'),
+    ('CAT010', 'C010', 'Category 10'),
+    ('CAT011', 'C011', 'Category 11'),
+    ('CAT012', 'C012', 'Category 12'),
+    ('CAT013', 'C013', 'Category 13'),
+    ('CAT014', 'C014', 'Category 14'),
+    ('CAT015', 'C015', 'Category 15'),
+    ('CAT016', 'C016', 'Category 16');
+
+INSERT INTO nongsan.invoice (id, address, iduser, status, user_id) VALUES
+(1, '123 Main St', '1', 'paid', '1'),
+(2, '456 Elm St', '2', 'pending', '2'),
+(3, '789 Oak St', '3', 'paid', '3'),
+(4, '321 Pine St', '4', 'pending', '4'),
+(5, '555 Maple St', '5', 'paid', '5'),
+(6, '777 Cedar St', '6', 'pending', '6'),
+(7, '888 Birch St', '7', 'paid', '7'),
+(8, '999 Walnut St', '8', 'pending', '8'),
+(9, '111 Spruce St', '9', 'paid', '9'),
+(10, '222 Ash St', '10', 'pending', '10'),
+(11, '333 Fir St', '11', 'paid', '11'),
+(12, '444 Redwood St', '12', 'pending', '12'),
+(13, '555 Sequoia St', '13', 'paid', '13'),
+(14, '666 Cedar St', '14', 'pending', '14'),
+(15, '777 Oak St', '15', 'paid', '15'),
+(16, '888 Pine St', '16', 'pending', '16'),
+(17, '999 Birch St', '17', 'paid', '17'),
+(18, '111 Maple St', '18', 'pending', '18'),
+(19, '222 Elm St', '19', 'paid', '19'),
+(20, '333 Main St', '20', 'pending', '20'),
+(21, '444 Cedar St', '21', 'paid', '21'),
+(22, '555 Oak St', '22', 'pending', '22'),
+(23, '666 Pine St', '23', 'paid', '23'),
+(24, '777 Birch St', '24', 'pending', '24'),
+(25, '888 Maple St', '25', 'paid', '25'),
+(26, '999 Elm St', '26', 'pending', '26'),
+(27, '111 Main St', '27', 'paid', '27'),
+(28, '222 Cedar St', '28', 'pending', '28'),
+(29, '333 Oak St', '29', 'paid', '29'),
+(30, '444 Pine St', '30', 'pending', '30'),
+(31, '555 Birch St', '31', 'paid', '31'),
+(32, '666 Maple St', '32', 'pending', '32'),
+(33, '777 Elm St', '33', 'paid', '33'),
+(34, '888 Main St', '34', 'pending', '34'),
+(35, '999 Cedar St', '35', 'paid', '35'),
+(36, '111 Oak St', '36', 'pending', '36'),
+(37, '222 Pine St', '37', 'paid', '37'),
+(38, '333 Birch St', '38', 'pending', '38'),
+(39, '444 Maple St', '39', 'paid', '39'),
+(40, '555 Elm St', '40', 'pending', '40'),
+(41, '666 Main St', '41', 'paid', '41'),
+(42, '777 Cedar St', '42', 'pending', '42'),
+(43, '888 Oak St', '43', 'paid', '43'),
+(44, '999 Pine St', '44', 'pending', '44'),
+(45, '111 Birch St', '45', 'paid', '45'),
+(46, '222 Maple St', '46', 'pending', '46'),
+(47, '333 Elm St', '47', 'paid', '47'),
+(48, '444 Main St', '48', 'pending', '48'),
+(49, '555 Cedar St', '49', 'paid', '49'),
+(50, '666 Oak St', '50', 'pending', '50');
+
+//////////////
+INSERT INTO nongsan.user (id, address, dob, email, gender, image, name, password, phonenumber, status, username) VALUES
+(1, '123 Main St', '1990-05-15', 'user001@example.com', 'male', 'avatar1.jpg', 'John Doe', 'password1', '1234567890', 'active', 'john_doe'),
+(2, '456 Elm St', '1985-08-20', 'user002@example.com', 'female', 'avatar2.jpg', 'Jane Smith', 'password2', '2345678901', 'active', 'jane_smith'),
+(3, '789 Oak St', '1992-02-10', 'user003@example.com', 'female', 'avatar3.jpg', 'Emily Johnson', 'password3', '3456789012', 'active', 'emily_johnson'),
+(4, '321 Pine St', '1988-11-30', 'user004@example.com', 'male', 'avatar4.jpg', 'Michael Williams', 'password4', '4567890123', 'active', 'michael_williams'),
+(5, '555 Maple St', '1995-04-25', 'user005@example.com', 'male', 'avatar5.jpg', 'David Brown', 'password5', '5678901234', 'active', 'david_brown'),
+(6, '777 Cedar St', '1987-07-12', 'user006@example.com', 'female', 'avatar6.jpg', 'Sarah Jones', 'password6', '6789012345', 'active', 'sarah_jones'),
+(7, '888 Birch St', '1991-09-18', 'user007@example.com', 'male', 'avatar7.jpg', 'James Davis', 'password7', '7890123456', 'active', 'james_davis'),
+(8, '999 Walnut St', '1989-01-05', 'user008@example.com', 'female', 'avatar8.jpg', 'Linda Miller', 'password8', '8901234567', 'active', 'linda_miller'),
+(9, '111 Spruce St', '1993-06-22', 'user009@example.com', 'male', 'avatar9.jpg', 'Chris Wilson', 'password9', '9012345678', 'active', 'chris_wilson'),
+(10, '222 Ash St', '1986-10-08', 'user010@example.com', 'female', 'avatar10.jpg', 'Mary Moore', 'password10', '0123456789', 'active', 'mary_moore'),
+(11, '333 Fir St', '1994-03-12', 'user011@example.com', 'male', 'avatar11.jpg', 'Jessica Taylor', 'password11', '9876543210', 'active', 'jessica_taylor'),
+(12, '444 Redwood St', '1984-12-01', 'user012@example.com', 'female', 'avatar12.jpg', 'Robert Anderson', 'password12', '8765432109', 'active', 'robert_anderson'),
+(13, '555 Sequoia St', '1997-07-30', 'user013@example.com', 'male', 'avatar13.jpg', 'Jennifer White', 'password13', '7654321098', 'active', 'jennifer_white'),
+(14, '666 Cedar St', '1983-04-17', 'user014@example.com', 'female', 'avatar14.jpg', 'Daniel Martinez', 'password14', '6543210987', 'active', 'daniel_martinez'),
+(15, '777 Oak St', '1990-02-05', 'user015@example.com', 'male', 'avatar15.jpg', 'Lisa Garcia', 'password15', '5432109876', 'active', 'lisa_garcia'),
+(16, '888 Pine St', '1988-05-19', 'user016@example.com', 'female', 'avatar16.jpg', 'Matthew Robinson', 'password16', '4321098765', 'active', 'matthew_robinson'),
+(17, '999 Birch St', '1992-08-14', 'user017@example.com', 'male', 'avatar17.jpg', 'Laura Hernandez', 'password17', '3210987654', 'active', 'laura_hernandez'),
+(18, '111 Maple St', '1987-11-03', 'user018@example.com', 'female', 'avatar18.jpg', 'Kevin Young', 'password18', '2109876543', 'active', 'kevin_young'),
+(19, '222 Elm St', '1995-03-28', 'user019@example.com', 'male', 'avatar19.jpg', 'Amanda King', 'password19', '1098765432', 'active', 'amanda_king'),
+(20, '333 Main St', '1989-06-15', 'user020@example.com', 'female', 'avatar20.jpg', 'Ryan Wright', 'password20', '9876543210', 'active', 'ryan_wright'),
+(21, '444 Cedar St', '1991-09-02', 'user021@example.com', 'male', 'avatar21.jpg', 'Stephanie Lopez', 'password21', '8765432109', 'active', 'stephanie_lopez'),
+(22, '555 Oak St', '1986-12-19', 'user022@example.com', 'female', 'avatar22.jpg', 'Jason Scott', 'password22', '7654321098', 'active', 'jason_scott'),
+(23, '666 Pine St', '1994-05-08', 'user023@example.com', 'male', 'avatar23.jpg', 'Megan Green', 'password23', '6543210987', 'active', 'megan_green'),
+(24, '777 Birch St', '1985-08-25', 'user024@example.com', 'female', 'avatar24.jpg', 'David Hall', 'password24', '5432109876', 'active', 'david_hall'),
+(25, '888 Maple St', '1993-01-31', 'user025@example.com', 'male', 'avatar25.jpg', 'Michelle Adams', 'password25', '4321098765', 'active', 'michelle_adams'),
+(26, '999 Elm St', '1984-04-14', 'user026@example.com', 'female', 'avatar26.jpg', 'Brian Campbell', 'password26', '3210987654', 'active', 'brian_campbell'),
+(27, '111 Main St', '1996-07-01', 'user027@example.com', 'male', 'avatar27.jpg', 'Angela Hill', 'password27', '2109876543', 'active', 'angela_hill'),
+(28, '222 Cedar St', '1988-10-20', 'user028@example.com', 'female', 'avatar28.jpg', 'James Mitchell', 'password28', '1098765432', 'active', 'james_mitchell'),
+(29, '333 Oak St', '1990-03-09', 'user029@example.com', 'male', 'avatar29.jpg', 'Sarah Carter', 'password29', '9876543210', 'active', 'sarah_carter'),
+(30, '444 Pine St', '1983-06-18', 'user030@example.com', 'female', 'avatar30.jpg', 'Daniel Perez', 'password30', '8765432109', 'active', 'daniel_perez'),
+(31, '555 Birch St', '1991-09-26', 'user031@example.com', 'male', 'avatar31.jpg', 'Emily Roberts', 'password31', '7654321098', 'active', 'emily_roberts'),
+(32, '666 Maple St', '1986-12-05', 'user032@example.com', 'female', 'avatar32.jpg', 'Christopher Turner', 'password32', '6543210987', 'active', 'christopher_turner'),
+(33, '777 Elm St', '1994-05-24', 'user033@example.com', 'male', 'avatar33.jpg', 'Jessica Phillips', 'password33', '5432109876', 'active', 'jessica_phillips'),
+(34, '888 Main St', '1985-08-11', 'user034@example.com', 'female', 'avatar34.jpg', 'Matthew Campbell', 'password34', '4321098765', 'active', 'matthew_campbell'),
+(35, '999 Cedar St', '1993-01-10', 'user035@example.com', 'male', 'avatar35.jpg', 'Laura Martinez', 'password35', '3210987654', 'active', 'laura_martinez'),
+(36, '111 Oak St', '1987-04-29', 'user036@example.com', 'female', 'avatar36.jpg', 'Kevin Phillips', 'password36', '2109876543', 'active', 'kevin_phillips'),
+(37, '222 Pine St', '1995-08-16', 'user037@example.com', 'male', 'avatar37.jpg', 'Rachel Adams', 'password37', '1098765432', 'active', 'rachel_adams'),
+(38, '333 Birch St', '1989-11-25', 'user038@example.com', 'female', 'avatar38.jpg', 'John Hernandez', 'password38', '9876543210', 'active', 'john_hernandez'),
+(39, '444 Maple St', '1992-02-13', 'user039@example.com', 'male', 'avatar39.jpg', 'Amanda Wilson', 'password39', '8765432109', 'active', 'amanda_wilson'),
+(40, '555 Elm St', '1986-05-02', 'user040@example.com', 'female', 'avatar40.jpg', 'Michael Torres', 'password40', '7654321098', 'active', 'michael_torres'),
+(41, '666 Main St', '1994-08-21', 'user041@example.com', 'male', 'avatar41.jpg', 'Jessica Rodriguez', 'password41', '6543210987', 'active', 'jessica_rodriguez'),
+(42, '777 Cedar St', '1983-01-17', 'user042@example.com', 'female', 'avatar42.jpg', 'David Garcia', 'password42', '5432109876', 'active', 'david_garcia'),
+(43, '888 Oak St', '1991-04-06', 'user043@example.com', 'male', 'avatar43.jpg', 'Linda Hernandez', 'password43', '4321098765', 'active', 'linda_hernandez'),
+(44, '999 Pine St', '1984-07-25', 'user044@example.com', 'female', 'avatar44.jpg', 'James Rodriguez', 'password44', '3210987654', 'active', 'james_rodriguez'),
+(45, '111 Birch St', '1996-10-14', 'user045@example.com', 'male', 'avatar45.jpg', 'Michelle Young', 'password45', '2109876543', 'active', 'michelle_young'),
+(46, '222 Maple St', '1988-03-03', 'user046@example.com', 'female', 'avatar46.jpg', 'Daniel Scott', 'password46', '1098765432', 'active', 'daniel_scott'),
+(47, '333 Elm St', '1990-06-22', 'user047@example.com', 'male', 'avatar47.jpg', 'Sarah White', 'password47', '9876543210', 'active', 'sarah_white'),
+(48, '444 Main St', '1983-09-11', 'user048@example.com', 'female', 'avatar48.jpg', 'Matthew Hall', 'password48', '8765432109', 'active', 'matthew_hall'),
+(49, '555 Cedar St', '1992-12-30', 'user049@example.com', 'male', 'avatar49.jpg', 'Emily Adams', 'password49', '7654321098', 'active', 'emily_adams'),
+(50, '666 Oak St', '1987-02-18', 'user050@example.com', 'female', 'avatar50.jpg', 'Jason Martinez', 'password50', '6543210987', 'active', 'jason_martinez');
+
+
+
+
+
+-- Insert data into role table
+INSERT INTO nongsan.role (name, description) VALUES
+('admin', 'Administrator role'),
+('user', 'Regular user role'),
+('manager', 'Manager role'),
+('guest', 'Guest role'),
+('developer', 'Developer role'),
+('editor', 'Editor role'),
+('analyst', 'Analyst role'),
+('operator', 'Operator role'),
+('tester', 'Tester role'),
+('support', 'Support role');
+ 
+INSERT INTO nongsan.permission (name, description) VALUES
+('create_user', 'Permission to create users'),
+('edit_user', 'Permission to edit users'),
+('delete_user', 'Permission to delete users'),
+('view_user', 'Permission to view users'),
+('create_invoice', 'Permission to create invoices'),
+('edit_invoice', 'Permission to edit invoices'),
+('delete_invoice', 'Permission to delete invoices'),
+('view_invoice', 'Permission to view invoices'),
+('create_product', 'Permission to create products'),
+('edit_product', 'Permission to edit products');
+
+-- Insert data into role_permissions table
+INSERT INTO nongsan.role_permissions (role_name, permissions_name) VALUES
+('admin', 'create_user'),
+('admin', 'edit_user'),
+('admin', 'delete_user'),
+('admin', 'view_user'),
+('admin', 'create_invoice'),
+('admin', 'edit_invoice'),
+('admin', 'delete_invoice'),
+('admin', 'view_invoice'),
+('admin', 'create_product'),
+('admin', 'edit_product'),
+('user', 'view_user'),
+('manager', 'view_user'),
+('manager', 'create_invoice'),
+('manager', 'edit_invoice'),
+('manager', 'view_invoice'),
+('developer', 'edit_product'),
+('developer', 'create_product'),
+('editor', 'edit_invoice'),
+('editor', 'view_invoice'),
+('analyst', 'view_invoice'),
+('operator', 'view_invoice'),
+('tester', 'view_invoice'),
+('support', 'view_user');
+
+-- Insert data into user_roles table
+INSERT INTO nongsan.user_roles (user_id, roles_name) VALUES
+('1', 'admin'),
+('2', 'user'),
+('3', 'manager'),
+('4', 'developer'),
+('5', 'editor'),
+('6', 'analyst'),
+('7', 'operator'),
+('8', 'tester'),
+('9', 'support'),
+('10', 'guest');
+
+
+-- Insert data into invoicedetail table
+INSERT INTO nongsan.invoicedetail (id, price, quantity, invoice_id, product_id) VALUES
+(1, 100.0, 2, 1, 1),
+(2, 50.0, 1, 1, 2),
+(3, 200.0, 3, 2, 3),
+(4, 75.0, 2, 2, 4),
+(5, 150.0, 1, 3, 5),
+(6, 80.0, 4, 3, 6),
+(7, 120.0, 2, 4, 7),
+(8, 60.0, 3, 4, 8),
+(9, 180.0, 5, 5, 9),
+(10, 90.0, 1, 5, 10),
+(11, 220.0, 3, 6, 11),
+(12, 70.0, 2, 6, 12),
+(13, 130.0, 4, 7, 13),
+(14, 65.0, 1, 7, 14),
+(15, 240.0, 2, 8, 15),
+(16, 100.0, 3, 8, 16),
+(17, 160.0, 6, 9, 17),
+(18, 50.0, 2, 9, 18),
+(19, 200.0, 3, 10, 19),
+(20, 70.0, 1, 10, 20),
+(21, 180.0, 4, 11, 21),
+(22, 85.0, 2, 11, 22),
+(23, 250.0, 1, 12, 23),
+(24, 60.0, 3, 12, 24),
+(25, 140.0, 2, 13, 25),
+(26, 55.0, 1, 13, 26),
+(27, 260.0, 3, 14, 27),
+(28, 75.0, 4, 14, 28),
+(29, 160.0, 1, 15, 29),
+(30, 90.0, 2, 15, 30),
+(31, 220.0, 4, 16, 31),
+(32, 80.0, 1, 16, 32),
+(33, 120.0, 2, 17, 33),
+(34, 65.0, 3, 17, 34),
+(35, 190.0, 5, 18, 35),
+(36, 70.0, 1, 18, 36),
+(37, 200.0, 3, 19, 37),
+(38, 75.0, 2, 19, 38),
+(39, 230.0, 4, 20, 39),
+(40, 85.0, 1, 20, 40),
+(41, 280.0, 2, 21, 41),
+(42, 100.0, 3, 21, 42),
+(43, 150.0, 6, 22, 43),
+(44, 60.0, 1, 22, 44),
+(45, 210.0, 3, 23, 45),
+(46, 80.0, 2, 23, 46),
+(47, 240.0, 1, 24, 47),
+(48, 95.0, 4, 24, 48),
+(49, 170.0, 2, 25, 49),
+(50, 70.0, 3, 25, 50);
+
+
+
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('1', '<p>Mận có vị ngọt thanh, giàu chất dinh dưỡng và vitamin A, C. Mận còn là nguồn cung cấp chất chống oxy hóa mạnh mẽ, giúp bảo vệ cơ thể khỏi các gốc tự do gây hại.</p><p>Mận thường được sử dụng trong các món tráng miệng, sinh tố và mứt. Nó cũng là một nguyên liệu phổ biến trong nhiều loại kem và bánh ngọt.</p><p>Thành phần dinh dưỡng: Mận, nước, đường.</p>', 'man.jpg', 2.5, 'Mận', 100, 100, '1'),
+('2', '<p>Chuối là một loại quả giàu dinh dưỡng, cung cấp năng lượng dồi dào. Chuối có chứa nhiều vitamin và khoáng chất như kali, magiê, và vitamin C.</p><p>Chuối thường được ăn trực tiếp hoặc sử dụng trong nhiều món ăn như sinh tố, bánh mì, bánh ngọt.</p><p>Thành phần dinh dưỡng: Chuối, nước, chất béo.</p>', 'banana.jpg', 1.5, 'Chuối', 150, 150, '1'),
+('3', '<p>Dưa hấu là một loại quả mát lạnh, giàu nước và chứa ít calo. Dưa hấu cũng là nguồn cung cấp chất chống oxy hóa và vitamin C.</p><p>Dưa hấu thường được sử dụng trong các món tráng miệng, sinh tố hoặc ăn trực tiếp khi thèm mát.</p><p>Thành phần dinh dưỡng: Dưa hấu, nước.</p>', 'watermelon.jpg', 3.0, 'Dưa hấu', 80, 80, '1'),
+('4', '<p>Dâu tây là loại quả giàu chất chống oxy hóa và vitamin C. Dâu tây có vị ngọt thanh, rất phổ biến trong các món tráng miệng, kem và sinh tố.</p><p>Dâu tây cũng được biết đến với lợi ích cho sức khỏe tim mạch và làm đẹp da.</p><p>Thành phần dinh dưỡng: Dâu tây, nước, đường.</p>', 'strawberry.jpg', 2.0, 'Dâu tây', 120, 120, '1'),
+('5', '<p>Cam là một loại quả giàu vitamin C và chất chống oxy hóa. Cam có vị chua ngọt và thường được ép thành nước cam hoặc ăn trực tiếp.</p><p>Cam cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Cam, nước.</p>', 'orange.jpg', 2.0, 'Cam', 90, 90, '1'),
+('6', '<p>Chanh là một loại quả chua, giàu vitamin C và chất chống oxy hóa. Chanh thường được sử dụng để làm nước giải khát, gia vị trong nhiều món ăn và món tráng miệng.</p><p>Chanh cũng có các lợi ích cho sức khỏe tim mạch và hệ miễn dịch.</p><p>Thành phần dinh dưỡng: Chanh, nước, đường.</p>', 'lemon.jpg', 1.8, 'Chanh', 110, 110, '1'),
+('7', '<p>Táo là một loại quả giàu chất xơ và vitamin C. Táo có nhiều loại khác nhau như táo xanh, táo đỏ, và táo vàng.</p><p>Táo thường được ăn trực tiếp hoặc sử dụng trong nhiều món ăn như mứt, bánh và nước ép.</p><p>Thành phần dinh dưỡng: Táo, nước.</p>', 'apple.jpg', 2.2, 'Táo', 100, 100, '1'),
+('8', '<p>Lê là một loại quả mát lạnh, giàu nước và chất xơ. Lê có vị ngọt thanh và thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, nước ép.</p><p>Lê cũng là nguồn cung cấp vitamin C và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Lê, nước.</p>', 'pear.jpg', 2.3, 'Lê', 90, 90, '1'),
+('9', '<p>Xoài là một loại quả có vị chua ngọt, giàu vitamin A và C. Xoài thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, sinh tố và salad.</p><p>Xoài cũng có các lợi ích cho sức khỏe tim mạch và hệ miễn dịch.</p><p>Thành phần dinh dưỡng: Xoài, nước.</p>', 'mango.jpg', 2.7, 'Xoài', 80, 80, '1'),
+('10', '<p>Bưởi là một loại quả giàu vitamin C và chất chống oxy hóa. Bưởi có vị chua ngọt và thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, nước ép.</p><p>Bưởi cũng có các lợi ích cho sức khỏe tim mạch và hệ miễn dịch.</p><p>Thành phần dinh dưỡng: Bưởi, nước.</p>', 'grapefruit.jpg', 2.5, 'Bưởi', 85, 85, '1'),
+('11', '<p>Dâu tằm là loại quả giàu vitamin C và chất chống oxy hóa. Dâu tằm có vị chua ngọt, rất phổ biến trong các món tráng miệng và nước ép.</p><p>Dâu tằm cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Dâu tằm, nước.</p>', 'passionfruit.jpg', 3.0, 'Dâu tằm', 95, 95, '1'),
+('12', '<p>Cherry là loại quả nhỏ có vị chua ngọt, giàu vitamin C và chất chống oxy hóa. Cherry thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, kem và sinh tố.</p><p>Cherry cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Cherry, nước.</p>', 'cherry.jpg', 3.2, 'Cherry', 75, 75, '1'),
+('13', '<p>Dừa là loại quả giàu dinh dưỡng, cung cấp nước và các khoáng chất như kali, magiê. Dừa có vị ngọt thanh và được sử dụng phổ biến trong các món tráng miệng, nước ép và mứt.</p><p>Dừa cũng là nguồn cung cấp chất xơ tự nhiên.</p><p>Thành phần dinh dưỡng: Dừa, nước.</p>', 'coconut.jpg', 2.8, 'Dừa', 95, 95, '1'),
+('14', '<p>Bơ là loại quả giàu chất béo có lợi, vitamin và khoáng chất. Bơ có vị béo ngậy và thường được sử dụng trong nhiều món ăn như salad, sandwich và sinh tố.</p><p>Bơ cũng là nguồn cung cấp chất xơ và chất chống oxy hóa.</p><p>Thành phần dinh dưỡng: Bơ, nước.</p>', 'avocado.jpg', 3.5, 'Bơ', 70, 70, '1'),
+('15', '<p>Bạc hà là một loại quả mát lạnh, có vị ngọt thanh và thường được dùng làm nước giải khát, trang trí món ăn và làm sinh tố.</p><p>Bạc hà cũng có tác dụng làm dịu cơn đau bụng và hỗ trợ tiêu hóa tốt hơn.</p><p>Thành phần dinh dưỡng: Bạc hà, nước.</p>', 'mint.jpg', 1.0, 'Bạc hà', 120, 120, '1'),
+('16', '<p>Mâm xôi là loại quả có hương vị thơm ngon, giàu vitamin và khoáng chất. Mâm xôi thường được ăn trực tiếp hoặc sử dụng trong các món ăn như sinh tố, mứt và bánh ngọt.</p><p>Mâm xôi cũng là nguồn cung cấp chất xơ và chất chống oxy hóa.</p><p>Thành phần dinh dưỡng: Mâm xôi, nước.</p>', 'papaya.jpg', 2.3, 'Mâm xôi', 85, 85, '1'),
+('17', '<p>Na là loại quả có vị chua ngọt và giàu vitamin C. Na thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, nước giải khát và mứt.</p><p>Na cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Na, nước.</p>', 'fig.jpg', 2.1, 'Na', 100, 100, '1'),
+('18', '<p>Quýt là loại quả giàu vitamin C và chất chống oxy hóa. Quýt có vị chua ngọt và thường được sử dụng trong các món tráng miệng, nước ép và nước giải khát.</p><p>Quýt cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Quýt, nước.</p>', 'citron.jpg', 2.2, 'Quýt', 95, 95, '1'),
+('19', '<p>Dưa lưới là loại quả giàu nước và chất xơ. Dưa lưới có vị ngọt và thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, nước giải khát và mứt.</p><p>Dưa lưới cũng là nguồn cung cấp vitamin A và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Dưa lưới, nước.</p>', 'melon.jpg', 1.9, 'Dưa lưới', 110, 110, '1'),
+('20', '<p>Chuối tiêu là loại quả giàu dinh dưỡng, cung cấp năng lượng dồi dào. Chuối tiêu có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, sinh tố và mứt.</p><p>Chuối tiêu cũng là nguồn cung cấp chất xơ và vitamin C.</p><p>Thành phần dinh dưỡng: Chuối tiêu, nước.</p>', 'plantain.jpg', 2.4, 'Chuối tiêu', 105, 105, '1'),
+('21', '<p>Sầu riêng là loại quả có hương vị đặc trưng và giàu dinh dưỡng. Sầu riêng có vị ngọt béo và thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, kem và sinh tố.</p><p>Sầu riêng cũng là nguồn cung cấp chất xơ và các vitamin quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Sầu riêng, nước.</p>', 'durian.jpg', 4.0, 'Sầu riêng', 70, 70, '1'),
+('22', '<p>Kiwi là loại quả giàu vitamin C và chất xơ. Kiwi có vị chua ngọt và thường được ăn trực tiếp hoặc sử dụng trong các món tráng miệng, sinh tố và salad.</p><p>Kiwi cũng là nguồn cung cấp chất chống oxy hóa.</p><p>Thành phần dinh dưỡng: Kiwi, nước.</p>', 'kiwi.jpg', 2.6, 'Kiwi', 95, 95, '1'),
+('23', '<p>Chuối chín là loại quả giàu dinh dưỡng, cung cấp năng lượng dồi dào. Chuối chín có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, sinh tố và mứt.</p><p>Chuối chín cũng là nguồn cung cấp chất xơ và vitamin C.</p><p>Thành phần dinh dưỡng: Chuối chín, nước.</p>', 'ripe-plantain.jpg', 2.2, 'Chuối chín', 100, 100, '1'),
+('24', '<p>Ổi là loại quả giàu chất dinh dưỡng và vitamin. Ổi có vị ngọt và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Ổi cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Ổi, nước.</p>', 'guava.jpg', 2.1, 'Ổi', 110, 110, '1'),
+('25', '<p>Đu đủ là loại quả giàu chất dinh dưỡng và vitamin. Đu đủ có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, sinh tố và salad.</p><p>Đu đủ cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Đu đủ, nước.</p>', 'papaya.jpg', 2.3, 'Đu đủ', 95, 95, '1'),
+('26', '<p>Đào là loại quả giàu chất dinh dưỡng và vitamin. Đào có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Đào cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Đào, nước.</p>', 'peach.jpg', 2.4, 'Đào', 100, 100, '1'),
+('27', '<p>Lựu là loại quả giàu chất dinh dưỡng và vitamin. Lựu có vị chua ngọt và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Lựu cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Lựu, nước.</p>', 'pomegranate.jpg', 2.5, 'Lựu', 90, 90, '1'),
+('28', '<p>Nho là loại quả giàu chất dinh dưỡng và vitamin. Nho có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Nho cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Nho, nước.</p>', 'grape.jpg', 1.8, 'Nho', 105, 105, '1'),
+('29', '<p>Vải là loại quả giàu chất dinh dưỡng và vitamin. Vải có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Vải cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Vải, nước.</p>', 'lychee.jpg', 2.0, 'Vải', 95, 95, '1'),
+('30', '<p>Dâu đen là loại quả giàu chất dinh dưỡng và vitamin. Dâu đen có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, kem và sinh tố.</p><p>Dâu đen cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Dâu đen, nước.</p>', 'blackberry.jpg', 2.3, 'Dâu đen', 85, 85, '1'),
+('31', '<p>Vú sữa là loại quả giàu chất dinh dưỡng và vitamin. Vú sữa có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Vú sữa cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Vú sữa, nước.</p>', 'milkfruit.jpg', 2.2, 'Vú sữa', 100, 100, '1'),
+('32', '<p>Mận lá xanh là loại quả giàu chất dinh dưỡng và vitamin. Mận lá xanh có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Mận lá xanh cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Mận lá xanh, nước.</p>', 'greengage.jpg', 2.1, 'Mận lá xanh', 105, 105, '1'),
+('33', '<p>Sung là loại quả giàu chất dinh dưỡng và vitamin. Sung có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Sung cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Sung, nước.</p>', 'carambola.jpg', 2.0, 'Sung', 95, 95, '1'),
+('34', '<p>Me là loại quả giàu chất dinh dưỡng và vitamin. Me có vị chua ngọt và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Me cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Me, nước.</p>', 'tamarind.jpg', 2.4, 'Me', 90, 90, '1'),
+('35', '<p>Ổi là loại quả giàu chất dinh dưỡng và vitamin. Ổi có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Ổi cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Ổi, nước.</p>', 'guava.jpg', 2.2, 'Ổi', 100, 100, '1'),
+('36', '<p>Chanh dây là loại quả giàu chất dinh dưỡng và vitamin. Chanh dây có vị chua ngọt và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Chanh dây cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Chanh dây, nước.</p>', 'passionfruit.jpg', 2.5, 'Chanh dây', 95, 95, '1'),
+('37', '<p>Dừa xiêm là loại quả giàu chất dinh dưỡng và vitamin. Dừa xiêm có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Dừa xiêm cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Dừa xiêm, nước.</p>', 'coconut.jpg', 2.3, 'Dừa xiêm', 105, 105, '1'),
+('38', '<p>Bưởi là loại quả giàu chất dinh dưỡng và vitamin. Bưởi có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Bưởi cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Bưởi, nước.</p>', 'pomelo.jpg', 2.4, 'Bưởi', 100, 100, '1'),
+('39', '<p>Thanh long là loại quả giàu chất dinh dưỡng và vitamin. Thanh long có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Thanh long cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Thanh long, nước.</p>', 'dragonfruit.jpg', 2.2, 'Thanh long', 95, 95, '1'),
+('40', '<p>Dưa hấu là loại quả giàu chất dinh dưỡng và vitamin. Dưa hấu có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Dưa hấu cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Dưa hấu, nước.</p>', 'watermelon.jpg', 1.8, 'Dưa hấu', 110, 110, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('41', '<p>Thơm là loại quả giàu chất dinh dưỡng và vitamin. Thơm có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Thơm cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Thơm, nước.</p>', 'guava.jpg', 2.2, 'Thơm', 100, 100, '1'),
+('42', '<p>Bơ là loại quả giàu chất dinh dưỡng và vitamin. Bơ có vị ngọt béo và thường được sử dụng trong các món ăn nhẹ, sinh tố và salad.</p><p>Bơ cũng là nguồn cung cấp chất béo tốt và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Bơ, nước.</p>', 'avocado.jpg', 2.5, 'Bơ', 90, 90, '1'),
+('43', '<p>Chuối là loại quả giàu chất dinh dưỡng và vitamin. Chuối có vị ngọt và thường được sử dụng trong các món tráng miệng, sinh tố và mứt.</p><p>Chuối cũng là nguồn cung cấp chất kali tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Chuối, nước.</p>', 'banana.jpg', 1.8, 'Chuối', 105, 105, '1'),
+('44', '<p>Dưa leo là loại quả giàu chất dinh dưỡng và vitamin. Dưa leo có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, salad và nước ép.</p><p>Dưa leo cũng là nguồn cung cấp chất xơ tự nhiên và nước cho cơ thể.</p><p>Thành phần dinh dưỡng: Dưa leo, nước.</p>', 'cucumber.jpg', 1.7, 'Dưa leo', 95, 95, '1'),
+('45', '<p>Sầu riêng là loại quả giàu chất dinh dưỡng và vitamin. Sầu riêng có vị ngọt béo và thường được sử dụng trong các món tráng miệng, sinh tố và kem.</p><p>Sầu riêng cũng là nguồn cung cấp chất béo tốt và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Sầu riêng, nước.</p>', 'durian.jpg', 2.8, 'Sầu riêng', 80, 80, '1'),
+('46', '<p>Chôm chôm là loại quả giàu chất dinh dưỡng và vitamin. Chôm chôm có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, sinh tố và mứt.</p><p>Chôm chôm cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Chôm chôm, nước.</p>', 'rambutan.jpg', 2.1, 'Chôm chôm', 100, 100, '1'),
+('47', '<p>Cam là loại quả giàu chất dinh dưỡng và vitamin. Cam có vị ngọt chua và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Cam cũng là nguồn cung cấp chất vitamin C và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Cam, nước.</p>', 'orange.jpg', 2.3, 'Cam', 95, 95, '1'),
+('48', '<p>Cherry là loại quả giàu chất dinh dưỡng và vitamin. Cherry có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, kem và sinh tố.</p><p>Cherry cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Cherry, nước.</p>', 'cherry.jpg', 2.4, 'Cherry', 105, 105, '1'),
+('49', '<p>Dưa gang là loại quả giàu chất dinh dưỡng và vitamin. Dưa gang có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Dưa gang cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Dưa gang, nước.</p>', 'honeydew.jpg', 1.9, 'Dưa gang', 90, 90, '1'),
+('50', '<p>Táo là loại quả giàu chất dinh dưỡng và vitamin. Táo có vị ngọt thanh và thường được sử dụng trong các món tráng miệng, nước ép và mứt.</p><p>Táo cũng là nguồn cung cấp chất xơ tự nhiên và các khoáng chất quan trọng cho cơ thể.</p><p>Thành phần dinh dưỡng: Táo, nước.</p>', 'apple.jpg', 2.0, 'Táo', 100, 100, '1');
+
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('51', '<p>Cà rốt chứa nhiều vitamin A và beta-carotene, giúp tăng cường sức khỏe mắt và da. Cà rốt còn cung cấp nhiều chất xơ và chất chống oxy hóa.</p><p>Cà rốt thường được sử dụng trong các món salad, nước ép, và nấu canh. Nó cũng có thể được ăn sống như một món ăn nhẹ.</p><p>Thành phần dinh dưỡng: Cà rốt.</p>', 'carot.jpg', 1.5, 'Cà rốt', 150, 150, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('52', '<p>Cà chua giàu vitamin C và lycopene, một chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi bệnh tật. Cà chua còn chứa nhiều kali và folate.</p><p>Cà chua thường được sử dụng trong các món salad, sốt, và các món hầm. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Cà chua.</p>', 'cachua.jpg', 1.0, 'Cà chua', 200, 200, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('53', '<p>Đậu xanh là nguồn cung cấp protein và chất xơ phong phú. Đậu xanh còn chứa nhiều vitamin và khoáng chất, bao gồm vitamin K, vitamin C, và folate.</p><p>Đậu xanh thường được sử dụng trong các món súp, hầm, và salad. Nó cũng có thể được nấu chín và ăn kèm với các món chính.</p><p>Thành phần dinh dưỡng: Đậu xanh.</p>', 'dauxanh.jpg', 1.8, 'Đậu xanh', 180, 180, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('54', '<p>Bí đỏ chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Bí đỏ còn cung cấp kali và magiê, giúp hỗ trợ sức khỏe tim mạch.</p><p>Bí đỏ thường được sử dụng trong các món súp, hầm, và nướng. Nó cũng có thể được làm thành món tráng miệng như bánh bí đỏ.</p><p>Thành phần dinh dưỡng: Bí đỏ.</p>', 'bido.jpg', 2.0, 'Bí đỏ', 120, 120, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('55', '<p>Súp lơ chứa nhiều vitamin C và K, cùng với chất xơ và các chất chống oxy hóa. Súp lơ còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Súp lơ thường được sử dụng trong các món salad, súp, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Súp lơ.</p>', 'suplo.jpg', 2.2, 'Súp lơ', 140, 140, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('56', '<p>Khoai tây là nguồn cung cấp carbohydrate và chất xơ phong phú. Khoai tây còn chứa nhiều vitamin C và B6, cùng với kali và sắt.</p><p>Khoai tây thường được sử dụng trong các món nướng, chiên, và hầm. Nó cũng có thể được làm thành khoai tây nghiền hoặc salad khoai tây.</p><p>Thành phần dinh dưỡng: Khoai tây.</p>', 'khoaitay.jpg', 1.2, 'Khoai tây', 200, 200, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('57', '<p>Ớt chuông chứa nhiều vitamin C và A, cùng với chất chống oxy hóa. Ớt chuông còn cung cấp kali và folate, hỗ trợ sức khỏe tim mạch.</p><p>Ớt chuông thường được sử dụng trong các món salad, xào, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Ớt chuông.</p>', 'otchuo.jpg', 1.8, 'Ớt chuông', 160, 160, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('58', '<p>Hành tây chứa nhiều vitamin C và chất chống oxy hóa. Hành tây còn cung cấp chất xơ và các khoáng chất như kali và mangan.</p><p>Hành tây thường được sử dụng trong các món xào, nướng, và súp. Nó cũng có thể được ăn sống trong các món salad.</p><p>Thành phần dinh dưỡng: Hành tây.</p>', 'hanhtay.jpg', 1.5, 'Hành tây', 180, 180, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('59', '<p>Cải bó xôi chứa nhiều vitamin A, C, và K, cùng với chất xơ và chất chống oxy hóa. Cải bó xôi còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Cải bó xôi thường được sử dụng trong các món salad, xào, và súp. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Cải bó xôi.</p>', 'caiboxoi.jpg', 2.0, 'Cải bó xôi', 150, 150, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('60', '<p>Bông cải xanh chứa nhiều vitamin C, K, và A, cùng với chất xơ và chất chống oxy hóa. Bông cải xanh còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Bông cải xanh thường được sử dụng trong các món salad, xào, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Bông cải xanh.</p>', 'bongcaixanh.jpg', 2.2, 'Bông cải xanh', 130, 130, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('61', '<p>Rau muống chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Rau muống còn cung cấp sắt và canxi, hỗ trợ sức khỏe xương và máu.</p><p>Rau muống thường được sử dụng trong các món xào, luộc, và nấu canh. Nó cũng có thể được ăn sống trong các món salad.</p><p>Thành phần dinh dưỡng: Rau muống.</p>', 'raumuo.jpg', 1.0, 'Rau muống', 180, 180, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('62', '<p>Bí xanh chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Bí xanh còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Bí xanh thường được sử dụng trong các món súp, hầm, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Bí xanh.</p>', 'bizanh.jpg', 1.8, 'Bí xanh', 120, 120, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('63', '<p>Đậu bắp chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Đậu bắp còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Đậu bắp thường được sử dụng trong các món súp, hầm, và xào. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Đậu bắp.</p>', 'daubap.jpg', 2.0, 'Đậu bắp', 160, 160, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('64', '<p>Cải thìa chứa nhiều vitamin A, C, và K, cùng với chất xơ và chất chống oxy hóa. Cải thìa còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Cải thìa thường được sử dụng trong các món xào, súp, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Cải thìa.</p>', 'caithia.jpg', 1.5, 'Cải thìa', 140, 140, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('65', '<p>Cải bẹ xanh chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Cải bẹ xanh còn cung cấp sắt và canxi, hỗ trợ sức khỏe xương và máu.</p><p>Cải bẹ xanh thường được sử dụng trong các món xào, luộc, và nấu canh. Nó cũng có thể được ăn sống trong các món salad.</p><p>Thành phần dinh dưỡng: Cải bẹ xanh.</p>', 'caibe.jpg', 1.2, 'Cải bẹ xanh', 130, 130, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('66', '<p>Khoai lang chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Khoai lang còn cung cấp kali và sắt, hỗ trợ sức khỏe tim mạch và máu.</p><p>Khoai lang thường được sử dụng trong các món nướng, chiên, và hầm. Nó cũng có thể được làm thành khoai lang nghiền hoặc salad khoai lang.</p><p>Thành phần dinh dưỡng: Khoai lang.</p>', 'khoaila.jpg', 1.6, 'Khoai lang', 150, 150, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('67', '<p>Mướp chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Mướp còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Mướp thường được sử dụng trong các món súp, hầm, và xào. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Mướp.</p>', 'muop.jpg', 1.7, 'Mướp', 140, 140, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('68', '<p>Rau dền chứa nhiều vitamin A, C, và K, cùng với chất xơ và chất chống oxy hóa. Rau dền còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Rau dền thường được sử dụng trong các món xào, luộc, và nấu canh. Nó cũng có thể được ăn sống trong các món salad.</p><p>Thành phần dinh dưỡng: Rau dền.</p>', 'rauden.jpg', 1.4, 'Rau dền', 120, 120, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('69', '<p>Ngô chứa nhiều vitamin A và B, cùng với chất xơ và chất chống oxy hóa. Ngô còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Ngô thường được sử dụng trong các món súp, hầm, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Ngô.</p>', 'ngo.jpg', 1.5, 'Ngô', 200, 200, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('70', '<p>Hành lá chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Hành lá còn cung cấp sắt và canxi, hỗ trợ sức khỏe xương và máu.</p><p>Hành lá thường được sử dụng trong các món xào, nướng, và súp. Nó cũng có thể được ăn sống trong các món salad.</p><p>Thành phần dinh dưỡng: Hành lá.</p>', 'hanhla.jpg', 1.3, 'Hành lá', 180, 180, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('71', '<p>Củ cải trắng chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Củ cải trắng còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Củ cải trắng thường được sử dụng trong các món súp, hầm, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Củ cải trắng.</p>', 'cucaitrang.jpg', 1.8, 'Củ cải trắng', 150, 150, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('72', '<p>Củ cải đỏ chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Củ cải đỏ còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Củ cải đỏ thường được sử dụng trong các món súp, hầm, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Củ cải đỏ.</p>', 'cucaido.jpg', 2.0, 'Củ cải đỏ', 140, 140, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('73', '<p>Củ đậu chứa nhiều vitamin C và B6, cùng với chất xơ và chất chống oxy hóa. Củ đậu còn cung cấp kali và sắt, hỗ trợ sức khỏe tim mạch và máu.</p><p>Củ đậu thường được sử dụng trong các món salad, xào, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Củ đậu.</p>', 'cudau.jpg', 1.7, 'Củ đậu', 160, 160, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('74', '<p>Bí ngòi chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Bí ngòi còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Bí ngòi thường được sử dụng trong các món súp, hầm, và nướng. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Bí ngòi.</p>', 'bingoi.jpg', 1.9, 'Bí ngòi', 120, 120, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('75', '<p>Su hào chứa nhiều vitamin C và K, cùng với chất xơ và chất chống oxy hóa. Su hào còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Su hào thường được sử dụng trong các món súp, hầm, và xào. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Su hào.</p>', 'suhao.jpg', 1.6, 'Su hào', 130, 130, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('76', '<p>Cà tím chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Cà tím còn cung cấp kali và magiê, hỗ trợ sức khỏe tim mạch.</p><p>Cà tím thường được sử dụng trong các món xào, nướng, và hầm. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Cà tím.</p>', 'catim.jpg', 2.0, 'Cà tím', 140, 140, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('77', '<p>Măng tây chứa nhiều vitamin A, C, và K, cùng với chất xơ và chất chống oxy hóa. Măng tây còn cung cấp kali và folate, hỗ trợ sức khỏe tim mạch và máu.</p><p>Măng tây thường được sử dụng trong các món xào, nướng, và súp. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Măng tây.</p>', 'mangtay.jpg', 2.5, 'Măng tây', 110, 110, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('78', '<p>Ớt cay chứa nhiều vitamin C và A, cùng với chất chống oxy hóa mạnh mẽ. Ớt cay còn cung cấp kali và folate, giúp hỗ trợ sức khỏe tim mạch.</p><p>Ớt cay thường được sử dụng trong các món xào, nướng, và súp. Nó cũng có thể được ăn sống hoặc làm nước ép.</p><p>Thành phần dinh dưỡng: Ớt cay.</p>', 'otcay.jpg', 1.8, 'Ớt cay', 150, 150, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('79', '<p>Rau ngót chứa nhiều vitamin A, C, và K, cùng với chất xơ và chất chống oxy hóa. Rau ngót còn cung cấp sắt và canxi, hỗ trợ sức khỏe xương và máu.</p><p>Rau ngót thường được sử dụng trong các món xào, luộc, và nấu canh. Nó cũng có thể được ăn sống trong các món salad.</p><p>Thành phần dinh dưỡng: Rau ngót.</p>', 'raungot.jpg', 1.6, 'Rau ngót', 130, 130, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('80', '<p>Rau diếp cá chứa nhiều vitamin A và C, cùng với chất xơ và chất chống oxy hóa. Rau diếp cá còn cung cấp canxi và sắt, hỗ trợ sức khỏe xương và máu.</p><p>Rau diếp cá thường được sử dụng trong các món salad, nước ép, và làm gia vị cho các món ăn khác.</p><p>Thành phần dinh dưỡng: Rau diếp cá.</p>', 'raudiepca.jpg', 1.4, 'Rau diếp cá', 140, 140, '1');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+ 
+(81, '<p>Hạt tiêu đen có vị cay nồng và thơm, là gia vị phổ biến trong nấu ăn. Hạt tiêu đen còn có tác dụng kích thích tiêu hóa và giảm viêm.</p><p>Hạt tiêu đen thường được sử dụng trong các món nướng, hầm và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt tiêu đen.</p>', 'hat_tieu_den.jpg', 2.0, 'Hạt Tiêu Đen', 150, 150, 8),
+(82, '<p>Gừng tươi có vị cay nồng và hương thơm đặc trưng, được sử dụng rộng rãi trong ẩm thực và y học cổ truyền. Gừng có tác dụng làm ấm cơ thể, giảm đau và kháng viêm.</p><p>Gừng tươi thường được sử dụng trong các món canh, súp và trà gừng.</p><p>Thành phần dinh dưỡng: Gừng tươi.</p>', 'gung_tuoi.jpg', 1.8, 'Gừng Tươi', 120, 120, 3),
+(83, '<p>Tỏi khô có vị cay nồng và hương thơm đặc trưng, là gia vị không thể thiếu trong nhiều món ăn. Tỏi khô còn có tác dụng kháng khuẩn và tăng cường miễn dịch.</p><p>Tỏi khô thường được sử dụng trong các món xào, nấu canh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Tỏi khô.</p>', 'toi_kho.jpg', 2.2, 'Tỏi Khô', 130, 130, 8),
+(84, '<p>Hành khô có vị ngọt và hương thơm đặc trưng, là gia vị phổ biến trong nấu ăn. Hành khô còn có tác dụng kháng viêm và hỗ trợ tiêu hóa.</p><p>Hành khô thường được sử dụng trong các món xào, nấu canh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hành khô.</p>', 'hanh_kho.jpg', 1.6, 'Hành Khô', 110, 110, 3),
+(85, '<p>Ngũ vị hương là hỗn hợp gia vị truyền thống, bao gồm nhiều loại thảo mộc và gia vị khác nhau. Ngũ vị hương mang lại hương vị đặc trưng và phong phú cho món ăn.</p><p>Ngũ vị hương thường được sử dụng trong các món nướng, hầm và nhiều món ăn truyền thống khác.</p><p>Thành phần dinh dưỡng: Ngũ vị hương.</p>', 'ngu_vi_huong.jpg', 2.5, 'Ngũ Vị Hương', 140, 140, 8),
+(86, '<p>Muối biển tinh khiết là gia vị cơ bản trong nấu ăn, giúp tăng hương vị và bảo quản thực phẩm. Muối biển còn cung cấp các khoáng chất cần thiết cho cơ thể.</p><p>Muối biển tinh khiết thường được sử dụng trong mọi món ăn.</p><p>Thành phần dinh dưỡng: Muối biển tinh khiết.</p>', 'muoi_bien.jpg', 1.2, 'Muối Biển', 200, 200, 8),
+(87, '<p>Đường phèn có vị ngọt thanh, thường được sử dụng trong nấu ăn và pha chế đồ uống. Đường phèn cũng có tác dụng làm dịu cổ họng và giảm ho.</p><p>Đường phèn thường được sử dụng trong các món tráng miệng và nước uống.</p><p>Thành phần dinh dưỡng: Đường phèn.</p>', 'duong_phen.jpg', 1.7, 'Đường Phèn', 160, 160, 3),
+(88, '<p>Bột nghệ có màu vàng tươi và vị cay nhẹ, là gia vị phổ biến trong ẩm thực và y học cổ truyền. Bột nghệ có tác dụng kháng viêm và chống oxy hóa.</p><p>Bột nghệ thường được sử dụng trong các món cà ri, nấu canh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Bột nghệ.</p>', 'bot_nghe.jpg', 2.3, 'Bột Nghệ', 140, 140, 8),
+(89, '<p>Bột quế có vị ngọt, cay nhẹ và hương thơm đặc trưng, là gia vị phổ biến trong nấu ăn và làm bánh. Bột quế có tác dụng giảm viêm và kiểm soát đường huyết.</p><p>Bột quế thường được sử dụng trong các món tráng miệng, đồ uống và nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Bột quế.</p>', 'bot_que.jpg', 2.1, 'Bột Quế', 130, 130, 8),
+(90, '<p>Ớt bột có vị cay nồng và hương thơm đặc trưng, là gia vị phổ biến trong nấu ăn. Ớt bột còn cung cấp vitamin C và có tác dụng kích thích tiêu hóa.</p><p>Ớt bột thường được sử dụng trong các món nướng, xào và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Ớt bột.</p>', 'ot_bot.jpg', 1.9, 'Ớt Bột', 150, 150, 8),
+(91, '<p>Bột ngũ cốc là hỗn hợp các loại hạt và đậu, cung cấp nhiều chất dinh dưỡng cần thiết cho cơ thể. Bột ngũ cốc có thể dùng để làm bánh, nấu cháo và pha chế đồ uống.</p><p>Thành phần dinh dưỡng: Bột ngũ cốc.</p>', 'bot_ngu_coc.jpg', 2.0, 'Bột Ngũ Cốc', 180, 180, 8),
+(92, '<p>Hạt mùi có vị ngọt, cay nhẹ và hương thơm đặc trưng, là gia vị phổ biến trong nấu ăn. Hạt mùi còn có tác dụng kích thích tiêu hóa và giảm viêm.</p><p>Hạt mùi thường được sử dụng trong các món nướng, hầm và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt mùi.</p>', 'hat_mui.jpg', 1.8, 'Hạt Mùi', 120, 120, 8),
+(93, '<p>Húng quế tươi có vị cay nhẹ và hương thơm đặc trưng, là gia vị phổ biến trong ẩm thực. Húng quế có tác dụng giảm căng thẳng và cải thiện tiêu hóa.</p><p>Húng quế tươi thường được sử dụng trong các món salad, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Húng quế tươi.</p>', 'hung_que_tuoi.jpg', 1.5, 'Húng Quế Tươi', 130, 130, 8),
+(94, '<p>Ngò rí tươi có vị ngọt, cay nhẹ và hương thơm đặc trưng, là gia vị phổ biến trong ẩm thực. Ngò rí tươi có tác dụng giảm viêm và cải thiện tiêu hóa.</p><p>Ngò rí tươi thường được sử dụng trong các món salad, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Ngò rí tươi.</p>', 'ngo_ri_tuoi.jpg', 1.4, 'Ngò Rí Tươi', 110, 110, 8),
+(95, '<p>Rau răm tươi có vị cay nồng và hương thơm đặc trưng, là gia vị phổ biến trong ẩm thực. Rau răm tươi có tác dụng giảm viêm và kích thích tiêu hóa.</p><p>Rau răm tươi thường được sử dụng trong các món salad, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Rau răm tươi.</p>', 'rau_ram_tuoi.jpg', 1.3, 'Rau Răm Tươi', 100, 100, 8),
+(96, '<p>Rau thơm tươi có vị ngọt, cay nhẹ và hương thơm đặc trưng, là gia vị phổ biến trong ẩm thực. Rau thơm tươi có tác dụng giảm viêm và cải thiện tiêu hóa.</p><p>Rau thơm tươi thường được sử dụng trong các món salad, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Rau thơm tươi.</p>', 'rau_thom_tuoi.jpg', 1.4, 'Rau Thơm Tươi', 110, 110, 8),
+(97, '<p>Ớt xanh tươi có vị cay nồng và hương thơm đặc trưng, là gia vị phổ biến trong ẩm thực. Ớt xanh tươi có tác dụng kích thích tiêu hóa và tăng cường miễn dịch.</p><p>Ớt xanh tươi thường được sử dụng trong các món xào, nấu canh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Ớt xanh tươi.</p>', 'ot_xanh_tuoi.jpg', 1.6, 'Ớt Xanh Tươi', 120, 120, 8),
+(98, '<p>Ớt đỏ tươi có vị cay nồng và hương thơm đặc trưng, là gia vị phổ biến trong ẩm thực. Ớt đỏ tươi có tác dụng kích thích tiêu hóa và tăng cường miễn dịch.</p><p>Ớt đỏ tươi thường được sử dụng trong các món xào, nấu canh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Ớt đỏ tươi.</p>', 'ot_do_tuoi.jpg', 1.6, 'Ớt Đỏ Tươi', 120, 120, 8),
+(99, '<p>Hạt chia là loại hạt nhỏ, có vị nhạt và chứa nhiều chất dinh dưỡng. Hạt chia có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt chia thường được sử dụng trong các món sinh tố, sữa chua và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt chia.</p>', 'hat_chia.jpg', 2.5, 'Hạt Chia', 150, 150, 8),
+(100, '<p>Hạt hạnh nhân là loại hạt có vị bùi, ngọt và chứa nhiều chất dinh dưỡng. Hạt hạnh nhân có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt hạnh nhân thường được sử dụng trong các món bánh, sữa chua và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt hạnh nhân.</p>', 'hat_hanh_nhan.jpg', 3.0, 'Hạt Hạnh Nhân', 140, 140, 8),
+(101, '<p>Hạt điều có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Hạt điều có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt điều thường được sử dụng trong các món ăn nhẹ, bánh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt điều.</p>', 'hat_dieu.jpg', 2.8, 'Hạt Điều', 160, 160, 8),
+(102, '<p>Hạt mắc ca có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Hạt mắc ca có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt mắc ca thường được sử dụng trong các món ăn nhẹ, bánh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt mắc ca.</p>', 'hat_macca.jpg', 3.5, 'Hạt Mắc Ca', 120, 120, 8),
+(103, '<p>Hạt dưa có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Hạt dưa có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt dưa thường được sử dụng trong các món ăn nhẹ, bánh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt dưa.</p>', 'hat_dua.jpg', 2.2, 'Hạt Dưa', 140, 140, 8),
+(104, '<p>Hạt bí đỏ có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Hạt bí đỏ có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt bí đỏ thường được sử dụng trong các món ăn nhẹ, bánh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt bí đỏ.</p>', 'hat_dua.jpg', 2.0, 'Hạt Bí Đỏ', 160, 160, 8),
+(105, '<p>Hạt bí xanh có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Hạt bí xanh có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Hạt bí xanh thường được sử dụng trong các món ăn nhẹ, bánh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Hạt bí xanh.</p>', 'hat_bi_xanh.jpg', 2.0, 'Hạt Bí Xanh', 150, 150, 8),
+(106, '<p>Đậu phộng có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Đậu phộng có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Đậu phộng thường được sử dụng trong các món ăn nhẹ, bánh và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Đậu phộng.</p>', 'dau_phong.jpg', 1.5, 'Đậu Phộng', 200, 200, 8),
+(107, '<p>Đậu xanh có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Đậu xanh có tác dụng giảm viêm và cải thiện tiêu hóa.</p><p>Đậu xanh thường được sử dụng trong các món cháo, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Đậu xanh.</p>', 'dau_xanh.jpg', 1.7, 'Đậu Xanh', 180, 180, 8),
+(108, '<p>Đậu đỏ có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Đậu đỏ có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Đậu đỏ thường được sử dụng trong các món cháo, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Đậu đỏ.</p>', 'dau_do.jpg', 1.8, 'Đậu Đỏ', 170, 170, 8),
+(109, '<p>Đậu nành có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Đậu nành có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Đậu nành thường được sử dụng trong các món cháo, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Đậu nành.</p>', 'dau_nanh.jpg', 1.6, 'Đậu Nành', 190, 190, 8),
+(110, '<p>Đậu hũ là sản phẩm từ đậu nành, có vị ngọt, bùi và chứa nhiều chất dinh dưỡng. Đậu hũ có tác dụng tăng cường sức khỏe tim mạch và hỗ trợ tiêu hóa.</p><p>Đậu hũ thường được sử dụng trong các món cháo, súp và làm gia vị cho nhiều món ăn khác.</p><p>Thành phần dinh dưỡng: Đậu hũ.</p>', 'dau_hu.jpg', 2.0, 'Đậu Hũ', 150, 150, 8);
+
+ INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('111', '<p>Nấm hương có vị thơm đặc trưng và giàu chất dinh dưỡng như protein và vitamin D. Nấm hương thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm hương.</p>', 'namhuong.jpg', 4.0, 'Nấm hương', 130, 130, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('112', '<p>Nấm mối có vị ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm mối.</p>', 'nammoi.jpg', 3.0, 'Nấm mối', 140, 140, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('113', '<p>Nấm bào ngư có vị ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm bào ngư thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm bào ngư.</p>', 'nambaongu.jpg', 3.2, 'Nấm bào ngư', 150, 150, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('114', '<p>Nấm đông cô có vị ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm đông cô thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm đông cô.</p>', 'namdongco.jpg', 3.3, 'Nấm đông cô', 160, 160, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('115', '<p>Nấm kim châm có vị đắng nhẹ và giàu chất dinh dưỡng như protein và vitamin B. Nấm kim châm thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm kim châm.</p>', 'namkimcham.jpg', 3.4, 'Nấm kim châm', 170, 170, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('116', '<p>Nấm mối chiên giòn có vị ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối chiên giòn thường được sử dụng trong các món chiên và nướng.</p><p>Thành phần dinh dưỡng: Nấm mối chiên giòn.</p>', 'nammoichiengion.jpg', 3.5, 'Nấm mối chiên giòn', 180, 180, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('117', '<p>Nấm rơm có vị nhạt và giàu chất dinh dưỡng như protein và vitamin B. Nấm rơm thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm rơm.</p>', 'namrom.jpg', 3.0, 'Nấm rơm', 190, 190, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('118', '<p>Nấm nương có vị đắng nhẹ và giàu chất dinh dưỡng như protein và vitamin B. Nấm nương thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm nương.</p>', 'namnuong.jpg', 3.2, 'Nấm nương', 200, 200, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('119', '<p>Nấm sò có vị đắng nhẹ và giàu chất dinh dưỡng như protein và vitamin B. Nấm sò thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm sò.</p>', 'namsocay.jpg', 3.4, 'Nấm sò', 210, 210, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('120', '<p>Nấm mèo nướng mỡ hành có vị đậm đà và giàu chất dinh dưỡng như protein và vitamin B. Nấm mèo nướng mỡ hành thường được sử dụng trong các món nướng và xào.</p><p>Thành phần dinh dưỡng: Nấm mèo nướng mỡ hành.</p>', 'nammeonuongmohan.jpg', 3.6, 'Nấm mèo nướng mỡ hành', 220, 220, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('121', '<p>Nấm tràm có vị thơm đặc trưng và giàu chất dinh dưỡng như protein và vitamin B. Nấm tràm thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm tràm.</p>', 'namtram.jpg', 3.3, 'Nấm tràm', 230, 230, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('122', '<p>Nấm chay có vị nhạt và giàu chất dinh dưỡng như protein và vitamin B. Nấm chay thường được sử dụng trong các món xào, nấu súp và nướng.</p><p>Thành phần dinh dưỡng: Nấm chay.</p>', 'namchay.jpg', 3.2, 'Nấm chay', 240, 240, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('123', '<p>Nấm rơm nấu nước dừa có vị đậm đà và giàu chất dinh dưỡng như protein và vitamin B. Nấm rơm nấu nước dừa thường được sử dụng trong các món nấu nước dừa.</p><p>Thành phần dinh dưỡng: Nấm rơm nấu nước dừa.</p>', 'namromnaunuocdua.jpg', 3.5, 'Nấm rơm nấu nước dừa', 250, 250, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('124', '<p>Nấm sò nấu nước dừa có vị nhạt và giàu chất dinh dưỡng như protein và vitamin B. Nấm sò nấu nước dừa thường được sử dụng trong các món nấu nước dừa.</p><p>Thành phần dinh dưỡng: Nấm sò nấu nước dừa.</p>', 'namsunaunuocdua.jpg', 3.6, 'Nấm sò nấu nước dừa', 260, 260, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('125', '<p>Nấm mối hầm thuốc bắc có vị đắm đà và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối hầm thuốc bắc thường được sử dụng trong các món hầm thuốc bắc.</p><p>Thành phần dinh dưỡng: Nấm mối hầm thuốc bắc.</p>', 'nammoihamthuocbac.jpg', 3.7, 'Nấm mối hầm thuốc bắc', 270, 270, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('126', '<p>Nấm linh chi có vị đắm đà và giàu chất dinh dưỡng như protein và vitamin B. Nấm linh chi thường được sử dụng trong các món nấu cháo và hầm.</p><p>Thành phần dinh dưỡng: Nấm linh chi.</p>', 'namlinhchi.jpg', 3.8, 'Nấm linh chi', 280, 280, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('127', '<p>Nấm bào ngư hầm thuốc bắc có vị đắm đà và giàu chất dinh dưỡng như protein và vitamin B. Nấm bào ngư hầm thuốc bắc thường được sử dụng trong các món hầm thuốc bắc.</p><p>Thành phần dinh dưỡng: Nấm bào ngư hầm thuốc bắc.</p>', 'nambaonguhamthuocbac.jpg', 3.9, 'Nấm bào ngư hầm thuốc bắc', 290, 290, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('128', '<p>Nấm mối xào xả ớt có vị cay nồng và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối xào xả ớt thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm mối xào xả ớt.</p>', 'nammoixaooxt.jpg', 4.0, 'Nấm mối xào xả ớt', 300, 300, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('129', '<p>Nấm mèo xào sả ớt có vị cay và thơm và giàu chất dinh dưỡng như protein và vitamin B. Nấm mèo xào sả ớt thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm mèo xào sả ớt.</p>', 'nammeoxaosao.jpg', 3.8, 'Nấm mèo xào sả ớt', 310, 310, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('130', '<p>Nấm kim châm nấu canh chua có vị chua thanh và giàu chất dinh dưỡng như protein và vitamin B. Nấm kim châm nấu canh chua thường được sử dụng trong các món nấu canh và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm kim châm nấu canh chua.</p>', 'namkimchamcanhchua.jpg', 3.9, 'Nấm kim châm nấu canh chua', 320, 320, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('131', '<p>Nấm hương xào tỏi có vị thơm và ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm hương xào tỏi thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm hương xào tỏi.</p>', 'namhuongxaotoi.jpg', 3.7, 'Nấm hương xào tỏi', 330, 330, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('132', '<p>Nấm đông cô xào dầu hào có vị đậm đà và giàu chất dinh dưỡng như protein và vitamin B. Nấm đông cô xào dầu hào thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm đông cô xào dầu hào.</p>', 'namdongcoxao.jpg', 3.8, 'Nấm đông cô xào dầu hào', 340, 340, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('133', '<p>Nấm nương xào tỏi có vị thơm và ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm nương xào tỏi thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm nương xào tỏi.</p>', 'namnuongxao.jpg', 3.6, 'Nấm nương xào tỏi', 350, 350, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('134', '<p>Nấm mối xào sả ớt có vị cay và thơm và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối xào sả ớt thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm mối xào sả ớt.</p>', 'nammoixaosao.jpg', 3.5, 'Nấm mối xào sả ớt', 360, 360, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('135', '<p>Nấm chay xào sả ớt có vị cay và thơm và giàu chất dinh dưỡng như protein và vitamin B. Nấm chay xào sả ớt thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm chay xào sả ớt.</p>', 'namchayxaosao.jpg', 3.4, 'Nấm chay xào sả ớt', 370, 370, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('136', '<p>Nấm hương sốt cà có vị chua ngọt và giàu chất dinh dưỡng như protein và vitamin B. Nấm hương sốt cà thường được sử dụng trong các món sốt và xào.</p><p>Thành phần dinh dưỡng: Nấm hương sốt cà.</p>', 'namhuongsotca.jpg', 3.5, 'Nấm hương sốt cà', 200, 200, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('137', '<p>Nấm kim châm xào bông cải có vị thanh nhẹ và giàu chất dinh dưỡng như protein và vitamin B. Nấm kim châm xào bông cải thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm kim châm xào bông cải.</p>', 'namkimchamxaobongcai.jpg', 3.7, 'Nấm kim châm xào bông cải', 210, 210, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('138', '<p>Nấm đông cô nấu canh cải có vị thanh nhẹ và giàu chất dinh dưỡng như protein và vitamin B. Nấm đông cô nấu canh cải thường được sử dụng trong các món canh và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm đông cô nấu canh cải.</p>', 'namdongconaucanhcai.jpg', 3.9, 'Nấm đông cô nấu canh cải', 220, 220, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('139', '<p>Nấm mối xào rau muống có vị thanh nhẹ và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối xào rau muống thường được sử dụng trong các món xào và nấu súp.</p><p>Thành phần dinh dưỡng: Nấm mối xào rau muống.</p>', 'nammoixaoraumuong.jpg', 3.6, 'Nấm mối xào rau muống', 230, 230, '5');
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+('140', '<p>Nấm mối rang muối có vị mặn và giàu chất dinh dưỡng như protein và vitamin B. Nấm mối rang muối thường được sử dụng trong các món nhắm và ăn vặt.</p><p>Thành phần dinh dưỡng: Nấm mối rang muối.</p>', 'nammoirangmuoi.jpg', 3.8, 'Nấm mối rang muối', 240, 240, '5');
+
+
+INSERT INTO nongsan.product (id, description, image, price, productname, quantity, remaningquantity, category_id) VALUES
+ (141, '<p>Hoa ly có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự tinh khiết và sang trọng. Hoa ly thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa ly.</p>', 'hoa_ly.jpg', 2.0, 'Hoa Ly', 150, 150, 3),
+(142, '<p>Hoa cúc vàng có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho niềm vui và sự lạc quan. Hoa cúc vàng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cúc vàng.</p>', 'hoa_cuc_vang.jpg', 1.8, 'Hoa Cúc Vàng', 120, 120, 3),
+(143, '<p>Hoa sen có hương thơm dịu nhẹ và màu sắc thanh khiết, tượng trưng cho sự tinh khiết và thanh cao. Hoa sen thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa sen.</p>', 'hoa_sen.jpg', 2.2, 'Hoa Sen', 130, 130, 3),
+(144, '<p>Hoa đồng tiền có hương thơm nhẹ nhàng và màu sắc rực rỡ, tượng trưng cho sự hạnh phúc và may mắn. Hoa đồng tiền thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa đồng tiền.</p>', 'hoa_dong_tien.jpg', 1.6, 'Hoa Đồng Tiền', 110, 110, 3),
+(145, '<p>Hoa lan có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự sang trọng và quý phái. Hoa lan thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa lan.</p>', 'hoa_lan.jpg', 2.5, 'Hoa Lan', 140, 140, 3),
+(146, '<p>Hoa cẩm chướng có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự ngưỡng mộ. Hoa cẩm chướng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm chướng.</p>', 'hoa_cam_chuong.jpg', 1.2, 'Hoa Cẩm Chướng', 200, 200, 3),
+(147, '<p>Hoa tulip có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự lãng mạn. Hoa tulip thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa tulip.</p>', 'hoa_tulip.jpg', 1.7, 'Hoa Tulip', 160, 160, 3),
+(148, '<p>Hoa hướng dương có hương thơm nhẹ nhàng và màu sắc rực rỡ, tượng trưng cho sự vui tươi và lạc quan. Hoa hướng dương thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hướng dương.</p>', 'hoa_huong_duong.jpg', 2.3, 'Hoa Hướng Dương', 140, 140, 3),
+(149, '<p>Hoa mẫu đơn có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự giàu sang và phú quý. Hoa mẫu đơn thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa mẫu đơn.</p>', 'hoa_mau_don.jpg', 2.1, 'Hoa Mẫu Đơn', 130, 130, 3),
+(150, '<p>Hoa hồng trắng có hương thơm dịu nhẹ và màu sắc thanh khiết, tượng trưng cho sự tinh khiết và thanh cao. Hoa hồng trắng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hồng trắng.</p>', 'hoa_hong_trang.jpg', 1.9, 'Hoa Hồng Trắng', 150, 150, 3),
+(151, '<p>Hoa hồng vàng có hương thơm ngọt ngào và màu sắc tươi sáng, tượng trưng cho tình bạn và sự ngưỡng mộ. Hoa hồng vàng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hồng vàng.</p>', 'hoa_hong_vang.jpg', 2.0, 'Hoa Hồng Vàng', 180, 180, 3),
+(152, '<p>Hoa cúc trắng có hương thơm nhẹ nhàng và màu sắc thanh khiết, tượng trưng cho sự tinh khiết và thanh cao. Hoa cúc trắng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cúc trắng.</p>', 'hoa_cuc_trang.jpg', 1.8, 'Hoa Cúc Trắng', 120, 120, 3),
+(153, '<p>Hoa baby có hương thơm nhẹ nhàng và màu sắc thanh khiết, tượng trưng cho sự tinh khiết và dịu dàng. Hoa baby thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa baby.</p>', 'hoa_baby.jpg', 1.5, 'Hoa Baby', 130, 130, 3),
+(154, '<p>Hoa lan hồ điệp có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự sang trọng và quý phái. Hoa lan hồ điệp thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa lan hồ điệp.</p>', 'hoa_lan_ho_diep.jpg', 2.2, 'Hoa Lan Hồ Điệp', 110, 110, 3),
+(155, '<p>Hoa cẩm tú cầu có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự trung thành và tình yêu chân thành. Hoa cẩm tú cầu thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm tú cầu.</p>', 'hoa_cam_tu_cau.jpg', 1.4, 'Hoa Cẩm Tú Cầu', 100, 100, 3),
+(156, '<p>Hoa cúc đồng tiền có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự hạnh phúc và may mắn. Hoa cúc đồng tiền thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cúc đồng tiền.</p>', 'hoa_cuc_dong_tien.jpg', 1.4, 'Hoa Cúc Đồng Tiền', 110, 110, 3),
+(157, '<p>Hoa cẩm chướng tím có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự quý phái và lòng kiên nhẫn. Hoa cẩm chướng tím thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm chướng tím.</p>', 'hoa_cam_chuong_tim.jpg', 1.6, 'Hoa Cẩm Chướng Tím', 120, 120, 3),
+(158, '<p>Hoa cẩm chướng hồng có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự dịu dàng. Hoa cẩm chướng hồng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm chướng hồng.</p>', 'hoa_cam_chuong_hong.jpg', 1.6, 'Hoa Cẩm Chướng Hồng', 120, 120, 3),
+(159, '<p>Hoa cẩm chướng đỏ có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho tình yêu và lòng kiên nhẫn. Hoa cẩm chướng đỏ thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm chướng đỏ.</p>', 'hoa_cam_chuong_do.jpg', 1.7, 'Hoa Cẩm Chướng Đỏ', 130, 130, 3),
+(160, '<p>Hoa hồng phấn có hương thơm dịu nhẹ và màu sắc thanh khiết, tượng trưng cho tình yêu và sự ngọt ngào. Hoa hồng phấn thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hồng phấn.</p>', 'hoa_hong_phan.jpg', 1.9, 'Hoa Hồng Phấn', 150, 150, 3),
+(161, '<p>Hoa hồng xanh có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự bí ẩn. Hoa hồng xanh thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hồng xanh.</p>', 'hoa_hong_xanh.jpg', 2.0, 'Hoa Hồng Xanh', 160, 160, 3),
+(162, '<p>Hoa loa kèn có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự thanh cao và tinh khiết. Hoa loa kèn thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa loa kèn.</p>', 'hoa_loa_ken.jpg', 2.2, 'Hoa Loa Kèn', 140, 140, 3),
+(163, '<p>Hoa cẩm tú cầu xanh có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự bình yên. Hoa cẩm tú cầu xanh thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm tú cầu xanh.</p>', 'hoa_cam_tu_cau_xanh.jpg', 1.8, 'Hoa Cẩm Tú Cầu Xanh', 120, 120, 3),
+(164, '<p>Hoa mẫu đơn hồng có hương thơm dịu nhẹ và màu sắc thanh khiết, tượng trưng cho sự dịu dàng và tình yêu. Hoa mẫu đơn hồng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa mẫu đơn hồng.</p>', 'hoa_mau_don_hong.jpg', 2.1, 'Hoa Mẫu Đơn Hồng', 130, 130, 3),
+(165, '<p>Hoa tử đinh hương có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự quyến rũ và thanh cao. Hoa tử đinh hương thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa tử đinh hương.</p>', 'hoa_tu_dinh_huong.jpg', 2.3, 'Hoa Tử Đinh Hương', 140, 140, 3),
+(166, '<p>Hoa thược dược có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự lạc quan. Hoa thược dược thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa thược dược.</p>', 'hoa_thuoc_duoc.jpg', 1.6, 'Hoa Thược Dược', 110, 110, 3),
+(167, '<p>Hoa phi yến có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự trung thành và tình yêu. Hoa phi yến thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa phi yến.</p>', 'hoa_phi_yen.jpg', 1.7, 'Hoa Phi Yến', 120, 120, 3),
+(168, '<p>Hoa hải đường có hương thơm dịu nhẹ và màu sắc tươi sáng, tượng trưng cho sự hạnh phúc và may mắn. Hoa hải đường thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hải đường.</p>', 'hoa_hai_duong.jpg', 1.9, 'Hoa Hải Đường', 130, 130, 3),
+(169, '<p>Hoa trà có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự sang trọng và quý phái. Hoa trà thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa trà.</p>', 'hoa_tra.jpg', 2.0, 'Hoa Trà', 140, 140, 3),
+(170, '<p>Hoa lan vũ nữ có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự quyến rũ và thanh cao. Hoa lan vũ nữ thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa lan vũ nữ.</p>', 'hoa_lan_vu_nu.jpg', 2.2, 'Hoa Lan Vũ Nữ', 150, 150, 3),
+(171, '<p>Hoa hồng cam có hương thơm ngọt ngào và màu sắc tươi sáng, tượng trưng cho tình yêu và sự lãng mạn. Hoa hồng cam thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hồng cam.</p>', 'hoa_hong_cam.jpg', 1.8, 'Hoa Hồng Cam', 120, 120, 3),
+(172, '<p>Hoa đồng tiền đỏ có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự vui tươi và lạc quan. Hoa đồng tiền đỏ thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa đồng tiền đỏ.</p>', 'hoa_dong_tien_do.jpg', 1.6, 'Hoa Đồng Tiền Đỏ', 110, 110, 3),
+(173, '<p>Hoa cẩm chướng vàng có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự quý phái và lòng kiên nhẫn. Hoa cẩm chướng vàng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm chướng vàng.</p>', 'hoa_cam_chuong_vang.jpg', 1.6, 'Hoa Cẩm Chướng Vàng', 120, 120, 3),
+(174, '<p>Hoa hướng dương nhỏ có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự lạc quan và vui vẻ. Hoa hướng dương nhỏ thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa hướng dương nhỏ.</p>', 'hoa_huong_duong_nho.jpg', 1.5, 'Hoa Hướng Dương Nhỏ', 100, 100, 3),
+(175, '<p>Hoa thủy tiên có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự thanh cao và tinh khiết. Hoa thủy tiên thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa thủy tiên.</p>', 'hoa_thuy_tien.jpg', 2.1, 'Hoa Thủy Tiên', 140, 140, 3),
+(176, '<p>Hoa loa kèn đỏ có hương thơm dịu nhẹ và màu sắc tươi sáng, tượng trưng cho sự lãng mạn và thanh cao. Hoa loa kèn đỏ thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa loa kèn đỏ.</p>', 'hoa_loa_ken_do.jpg', 2.2, 'Hoa Loa Kèn Đỏ', 150, 150, 3),
+(177, '<p>Hoa tử đinh hương tím có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự quyến rũ và thanh cao. Hoa tử đinh hương tím thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa tử đinh hương tím.</p>', 'hoa_tu_dinh_huong_tim.jpg', 2.3, 'Hoa Tử Đinh Hương Tím', 130, 130, 3),
+(178, '<p>Hoa đồng tiền hồng có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho sự vui tươi và lạc quan. Hoa đồng tiền hồng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa đồng tiền hồng.</p>', 'hoa_dong_tien_hong.jpg', 1.5, 'Hoa Đồng Tiền Hồng', 120, 120, 3),
+(179, '<p>Hoa cẩm tú cầu hồng có hương thơm nhẹ nhàng và màu sắc tươi sáng, tượng trưng cho tình yêu và sự dịu dàng. Hoa cẩm tú cầu hồng thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa cẩm tú cầu hồng.</p>', 'hoa_cam_tu_cau_hong.jpg', 1.7, 'Hoa Cẩm Tú Cầu Hồng', 130, 130, 3),
+(180, '<p>Hoa lan kiếm có hương thơm quyến rũ và màu sắc tươi sáng, tượng trưng cho sự sang trọng và quý phái. Hoa lan kiếm thường được sử dụng trong các bó hoa và trang trí.</p><p>Thành phần dinh dưỡng: Hoa lan kiếm.</p>', 'hoa_lan_kiem.jpg', 2.0, 'Hoa Lan Kiếm', 140, 140, 3);
+
